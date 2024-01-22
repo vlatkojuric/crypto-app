@@ -11,7 +11,6 @@ function App() {
   const [listOfCoins, setListOfCoins] = useState([]);
   const [searchWord, setSearchWord] = useState("");
 
-  //using the useEffect hook to display the data imediately on the page and using the dependany array to prevent it looping
   useEffect(() => {
     axios
       .get("https://openapiv1.coinstats.app/coins", {
